@@ -1,11 +1,13 @@
 $cor-principal: rgb(177, 15, 15); // Tomate
 $cor-secundaria: rgb(107, 8, 8); // Branco
 $amarelo-queimado : rgb(255, 196, 0);
+$azul : rgb(43, 69, 104);
+
 
 body {
     font-family: sans-serif;
- background-color: $cor-secundaria;
- color: $cor-secundaria;
+    background-color: $cor-secundaria;
+    color: $cor-secundaria;
 }
 
 nav {
@@ -86,6 +88,7 @@ nav {
     -webkit-mask-image: linear-gradient(to right, transparent 0%, $cor-secundaria 70%);
    }
 
+
 .apresentacao {
     width: 300px;
     color: white;
@@ -94,6 +97,8 @@ nav {
     left: 70px;
     top: 180px;
 }
+
+
 
 .apresentacao input[type="text"] {
     background-color: transparent;
@@ -112,6 +117,34 @@ nav {
     border-radius: 5px;
  }
  
- .produtos {
+.produtos {
     color: white;
+ }
+
+.lista{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+}
+
+
+.prod {
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 220px;
+    height: 330px;
+ }
+
+ .prod a {
+    color: white;
+    text-decoration: none;
+ }
+
+ .prod button {
+    color: white;
+    padding: 5px 15px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
  }

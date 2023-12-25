@@ -6,9 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rust-Eze</title>
+<link rel="stylesheet" href="/static/scss/styles.css">
 
-    
-    <link rel="stylesheet" href="{% static '/scss/styles.css' %}">
 </head>
 <body>
     
@@ -35,9 +34,7 @@
     </nav>
 
     <div class="subnav">
-        <div class="menu">
-            <a href="/sobre/">sobre</a>
-        </div>
+        <a href=""><p> </p></a>
     </div>
 
     <div class="corpo">
@@ -52,6 +49,36 @@
 
     <div class="produtos">
         <h1>Nossos Produtos</h1>
+        <hr>
+
+        {% block content %}
+
+
+
+        <div class="lista">
+        {% for product in products %}
+        
+
+        <div class="prod">
+            <a href="">
+                <img src="https://i.pinimg.com/736x/4d/6a/e1/4d6ae1cc686acd25a9800d04bc726313.jpg" alt="" height="200",width= '200'>
+            {{product.title}}
+            <br>
+            R$ {{product.price}},00
+            </a>
+            <button>adicionar ao carrinho</button>
+            <button>comprar</button>
+        </div>
+            
+
+        {% endfor %}
+        </div>
+
+
+
+        
+        {% endblock %}
+
     </div>
 </body>
 </html>

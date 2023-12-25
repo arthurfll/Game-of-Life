@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from loja.models import *
+
+
 
 def home(request):
-    return render(request,'core/home.html')
+    products = Product.objects.all()[0:6]
+    return render(request,'core/home.html',{'products':products})
 
-def sobre(request):
-    return render(request,'core/sobre.html')
 
 def carrinho(request):
     return render(request,"core/carrinho.html")
