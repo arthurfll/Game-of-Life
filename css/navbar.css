@@ -1,0 +1,43 @@
+nav {
+    align-items: center;
+    background: linear-gradient(to top, transparent, rgb(2, 26, 36));
+    height: 60px;
+}
+
+nav h1 {
+    font-size: large;
+    font-size: 30px;
+}
+
+.sub-nav {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background: linear-gradient(to top, transparent, rgb(2, 26, 36));
+        height: 60px;
+    }
+    
+    nav h1 {
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .sub-nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .sub-nav a {
+        display: inline;
+        margin: 5px;
+        margin-right: 10px;
+      }
+}
