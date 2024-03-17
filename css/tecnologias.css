@@ -1,10 +1,17 @@
+.tecnologias {
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    align-content: space-between;
+    background: linear-gradient(to top, rgb(6, 14, 44), transparent);
+    flex-wrap: wrap
+}
+
 @media only screen and (max-width: 600px) {
     .tecnologias {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: space-between;
-        background: linear-gradient(to top, rgb(1, 17, 24), transparent);
+        gap:2%
     }
 }

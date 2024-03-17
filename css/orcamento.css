@@ -1,0 +1,46 @@
+.orcamento {
+    background-color: rgb(6, 14, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto {
+    margin-left: 10%;
+    display: block;
+    width: 280px;left: 15%;
+    margin-top: 20px;
+}
+
+.texto h3 {
+    font-size: 23px;
+}
+
+.texto h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(131, 131, 131);
+}
+
+@media only screen and (max-width: 600px) {}
+
+
+.form {
+    margin-top: 20px;
+    border:  1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10%;
+}
+
+.form h3 {
+    font-size: 23px;
+}
+
+.form button {
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border:  1px solid white;
+    border-radius: 10px;
+}
